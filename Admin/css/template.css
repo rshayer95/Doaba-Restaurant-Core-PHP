@@ -1,0 +1,372 @@
+*
+{
+    border:none;
+    text-decoration:none;
+
+}
+.main-content
+{
+    background:#272B30;
+    top:10vh;
+    width:100%;
+    height:90vh;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    overflow-y:auto;
+}
+h1
+{
+    color:#ff4d4d;
+}
+.main-content .addcategory-container
+{
+    margin:10px;
+    padding:10px;
+    width:450px;
+    height:auto;
+    background:rgba(255,255,255,0.1);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+}
+.addcategory-container h1
+{
+    text-transform:uppercase;
+    font-size:1.5em;
+    color:#fff;
+}
+.addcategory-container h6
+{
+    color:#ac1c1c;
+}
+.addcategory-container h5
+{
+    color:#a6ce39;
+}
+.addcategory-container .row-reverse
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content:center;
+}
+.addcategory-container .row-reverse input 
+{
+    width:300px;
+    height:40px;
+    padding-left:10px;
+    margin:10px;
+}
+.addcategory-container .row-reverse textarea 
+{
+    width:300px;
+    height:150px;
+    padding-left:10px;
+    font:inherit;
+    margin:10px;
+    resize:none;
+}
+.addcategory-container .row-reverse select
+{
+    width:300px;
+    height:40px;
+    padding-left:10px;
+    margin:10px;
+}
+.addcategory-container .row-reverse i
+{
+    font-size:25px;
+    margin:0 10px;
+    color:#000;
+}
+.addcategory-container button
+{
+    width:200px;
+    height:40px;
+    border:1px solid #ff4d4d;
+    color:#fff;
+    background:#ff4d4d;
+    font-size:16px;
+
+}
+.addcategory-container button:hover
+{
+    cursor:pointer;
+    background:#e3e3e3;
+    color:#333;
+    border:1px solid #666;
+}
+.main-content .upload
+{
+    width:500px;
+    background: rgba(255,255,255,0.3);
+    padding:20px;
+}
+.upload-container fieldset 
+{
+   border:0;
+   padding:0;
+   margin-bottom:10px;
+}
+.upload-container fieldset legend
+{
+    font-size:1.2em;
+    padding:0;
+    color:#fff;
+}
+.upload-container fieldset button
+{
+    background: #ff4d4d;
+    color:#fff;
+    border:1px solid #ff4d4d;
+    width:150px;
+    height:30px;
+    font-size:16px;
+    cursor:pointer;
+}
+.upload-container .bar
+{
+    width:100%;
+    padding:3px;
+    background:rgba(255,255,255,0.4);
+    margin-bottom:10px;
+    box-shadow:inset 0 1px 3px rgba(0,0,0,0.2);
+    border-radius:3px;
+    box-sizing: border-box;
+}
+.upload-container .bar .bar-fill
+{
+    height:20px;
+    display:block;
+    background:#ff4d4d;
+    width:0;
+    border-radius:3px;
+    transition: width 0.8s ease;
+}
+.bar .bar-fill .bar-fill-text
+{
+    color:#fff;
+    padding:3px;
+}
+.upload-container .uploads div
+{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.upload-container .uploads a,.upload-container .uploads span
+{
+    display:block;
+    text-decoration:none;
+    
+}
+.upload-container .uploads label
+{
+    color:#a6ce39;
+}
+.upload-container .uploads span
+{
+    color:#ac1c1c;
+  
+}
+.main-content .manage-container
+{
+    width:90vw;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+
+}
+.manage-container table
+{
+    width:100%;
+    border-collapse:collapse;
+}
+.manage-container table,.manage-container table td
+{
+    border:1px solid #c1c1c1;
+}
+.manage-container table tr
+{
+    background:#fff;
+   
+}
+.manage-container table td
+{
+    padding:10px 10px;
+}
+.manage-container table tr:nth-of-type(even)
+{
+    background:#f0f0f0;
+}
+.manage-container table tr:nth-of-type(1)
+{
+    background: #ff4d4d;
+    color:#fff;
+   
+}
+table td button
+{
+    font-size: 20px;
+    background:transparent;
+    cursor:pointer;
+    border:none;
+    color:#444;
+}
+table td button:hover
+{
+    transform: scale(1.5);
+    color:#222;
+}
+table td > img
+{
+   width:100px;
+   height:100px;
+}
+table td > a
+{
+    color:#00652e;
+}
+table td >a:hover
+{
+    color:#a6ce39;
+} 
+.fail 
+{
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:70px;
+    background:#ac1c1c;
+    color:#fff;
+    font-weight:bold;
+    position:absolute;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    z-index:40;
+}
+.fail h6
+{
+    margin:auto 20px;
+    color:#fff;
+    font-size:16px;
+}
+.fail button
+{
+    background:transparent;
+    border:none;
+    width:100px;
+    height:auto;
+    font-size:40px;
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+}
+.fail button i
+{
+    color:#fff;
+    
+
+}
+.fail button:hover i
+{
+    color:#000;
+}
+.success 
+{
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:70px;
+    background:#a6ce39;
+    color:#00652e;
+    font-weight:bold;
+    position:absolute;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    z-index:40;
+}
+.success h6
+{
+    margin:auto 20px;
+    color:#00652e;
+    font-size:16px;
+}
+.success button
+{
+    background:transparent;
+    border:none;
+    width:100px;
+    height:auto;
+    font-size:40px;
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+}
+.success button i
+{
+    color:#fff;
+    
+
+}
+.success button:hover i
+{
+    color:#000;
+}
+.main-content .dashboard
+{
+    width:90vw;
+    height:auto;
+    margin:10px;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.dashboard .card
+{
+    width:40vw;
+    height:200px;
+    background:#fff;
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: flex-start;
+} 
+.dashboard h1
+{
+    width:100%;
+    height:100px;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: center;
+    text-transform:uppercase;
+}
+.dashboard .card label
+{
+    width:100%;
+    height:100px;
+    font-weight:bold;
+    font-size:50px;
+    color:#333;
+    background:#f0f0f0;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content: center;
+}
