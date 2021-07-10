@@ -1,0 +1,511 @@
+*
+{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    outline:none;
+    font-family:'century gothic',sans-serif;
+    color:#333;
+    font-size:100%;
+}
+html
+{
+    overflow-x:hidden;
+    
+}
+body
+{
+    
+    width:100%;
+    height:100vh;
+    position:absolute;
+}
+.wrapper
+{
+    width:100%;
+    height:10vh;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    position:fixed;
+    z-index:10;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.16) !important;
+}
+.wrapper nav
+{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding:auto 10px; 
+}
+.wrapper nav img
+{
+    width:auto;
+    height:10vh;
+}
+.wrapper nav .log-grp
+{
+    float:right;
+    width:300px;
+    height:10vh;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+nav .log-grp #login, nav .log-grp a, nav .log-grp #signup
+{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    margin:auto 10px;
+}
+.log-grp a img
+{
+    height:50px;
+    width:auto;
+}
+
+nav .log-grp #login ,nav .log-grp #signup
+{
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:inherit;
+}
+nav .log-grp a:hover, nav .log-grp #login:hover, nav .log-grp #signup:hover
+{
+    color:#ff4d4d;
+    cursor:pointer;
+}
+.log-grp a:hover i ,  nav .log-grp #login:hover i, nav .log-grp #signup:hover i
+{
+    color:#ff4d4d;
+}
+.fail 
+{
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:70px;
+    background:#ac1c1c;
+    color:#fff;
+    font-weight:bold;
+    position:absolute;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    z-index:40;
+}
+.fail h6
+{
+    margin:auto 20px;
+    color:#fff;
+}
+.fail button
+{
+    background:transparent;
+    border:none;
+    width:100px;
+    height:auto;
+    font-size:40px;
+    color:#fff;
+    cursor:pointer;
+    outline:none;
+}
+.fail button i
+{
+    color:#fff;
+    
+
+}
+.fail button:hover i
+{
+    color:#000;
+}
+.main-content
+{
+    top:10vh;
+    background: url("../img/appback.jpeg") center center no-repeat;
+    background-size:cover;
+    width:100%;
+    height:90vh;
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.main-content .services
+{
+    width:90%;
+    height:auto;
+    padding:10px 10px;
+    background:transparent;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.services .row
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.services .row a
+{
+    width:200px;
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background: rgba(255,255,255,0.9);
+    margin:10px;
+    font-size:18px;
+}
+.row a i
+{
+    font-size:100px;
+    margin:10px auto;
+}
+.row a:hover i
+{
+    color:#ff4d4d;
+}
+.popup
+{
+    top:0;
+    left:0;
+    right:0;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,0.8);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    z-index:20;
+    position:absolute;
+}
+.popup .login-box
+{
+    width:450px;
+    height:400px;
+    padding:10px 10px;
+    background: rgba(255,255,255,0.95);
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    z-index:25;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+}
+.login-box .row
+{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.login-box h6
+{
+    color:#ac1c1c;
+    font-weight:bold;
+
+}
+.login-box .row input
+{
+    width:350px;
+    height:40px;
+    border:1px solid #d1d1d1;
+    background:#f1f1f1;
+    color:#333;
+    margin:10px 10px;
+   padding:auto 10px;
+   padding-left:10px;
+}
+.login-box .row  input:focus 
+{
+    border:1px solid #ff4d4d;
+}
+.login-box .row  input:focus + i 
+{
+    color: #ff4d4d;
+}
+.login-box #login-btn
+{
+    width:100px;
+    height:35px;
+    border:1px solid #ff4d4d;
+    background:#ff4d4d;
+    color:#fff;
+    outline:none;
+    margin:5px 10px;
+}
+.login-box #login-btn:hover
+{
+    background:#e3e3e3;
+    color:#111;
+    border:1px solid #666;
+    cursor:pointer;
+}
+.login-box #cancel 
+{
+    width:100px;
+    height:35px;
+    background: #f5f5f5;
+    border:1px solid #a9a9a9;
+    color:#a9a9a9;
+}
+.login-box #cancel:hover
+{
+    cursor:pointer;
+    background:#f1f1f1;
+    color:#888;
+    border:1px solid #888;
+}
+.login-box h1
+{
+    text-transform: uppercase;
+    font-size: 2em;
+    color:#444;
+}
+
+.popup .signup-box
+{
+    width:80%;
+    height:auto;
+    padding:10px 10px;
+    background: rgba(255,255,255,0.95);
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    position:relative;
+    z-index:25;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+}
+.signup-box h1
+{
+    text-transform: uppercase;
+    color:#00652e;
+    font-size:1.5em;
+}
+.signup-box .horizontal
+{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+.signup-box .horizontal .vertical
+{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:flex-start;
+    justify-content:center;
+    height:auto;
+    width:auto;
+}
+.horizontal .vertical input
+{
+    width:250px;
+    height:40px;
+    border:1px solid #d1d1d1;
+    background:#f1f1f1;
+    color:#333;
+    margin:10px 10px;
+   padding:auto 10px;
+   padding-left:10px;
+}
+.horizontal .vertical  input:focus 
+{
+    border:1px solid #a6ce39;
+}
+.vertical  input:focus + label
+{
+    color: #a6ce39;
+}
+.horizontal .vertical label
+{
+    padding-left:10px;
+}
+.horizontal .vertical h6
+{
+    color:#ac1c1c;
+}
+.horizontal .vertical .grouped
+{
+    width:280px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+}
+.vertical .grouped input[type="radio"]
+{
+    width:25px;
+}
+
+.main-content .upload-box
+{
+    width:500px;
+    height:400px;
+    background:rgba(255,255,255,0.9);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+}
+.upload-box h1
+{
+    text-transform: uppercase;
+    color:#222;
+    font-size:1.5em;
+}
+.upload-box input
+{
+    width:300px;
+    height:35px;
+    margin:10px auto;
+    background:#f1f1f1;
+    border:1px solid #d1d1d1;
+}
+.upload-box .btn-grouped
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.upload-box .btn-grouped button
+{
+    width:100px;
+    height:35px;
+    background:#ff4d4d;
+    border:1px solid #ff4d4d;
+    color:#fff;
+    cursor:pointer;
+}
+.upload-box .btn-grouped button:hover
+{
+    color:#333;
+    background:#e3e3e3;
+    border:1px solid #666;
+}
+.upload-box .btn-grouped a
+{
+    width:100px;
+    height:35px;
+    margin:auto 10px;
+    background:#fafafa;
+    border:1px solid #d1d1d1;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:#888;
+}
+.upload-box .btn-grouped a:hover
+{
+    border:1px solid #888;
+    background:#f5f5f5;
+}
+.upload-box h6
+{
+    color:#ac1c1c;
+}
+.upload-box h5
+{
+    color:#a6ce39;
+}
+
+@media screen and (min-width:150px) and (max-width:500px){
+    .main-content
+    {
+       height:auto;
+    }
+    .wrapper 
+    {
+        width:100vw;
+    }
+    .wrapper nav img
+    {
+        width:150px;
+        height:8vh;
+    }
+    nav .log-grp #login, nav .log-grp a, nav .log-grp #signup
+    {
+        font-size:14px;
+    }
+    .popup
+    {
+        width:100vw;
+        height:100vh;
+       
+    }
+    .popup .login-box
+    {
+        width:80vw;
+        height:80vh;
+        margin:auto;
+    }
+    .login-box .row
+    {
+        flex-direction:column-reverse;
+    }
+    .login-box .row input
+    {
+        width:100%;
+        margin:auto;
+        margin:10px auto;
+    }
+    .login-box #login-btn, .login-box #cancel
+    {
+        width:180px;
+        
+    }
+    .login-box h6
+    {
+        font-size:14px;
+        text-align:center;
+        margin:5px;
+    }
+}
+
+@media screen and (min-width:461px) and (max-width:940px)
+{
+    .main-content
+    {
+        height:auto;
+    }
+   
+}
+
+@media screen and (min-width:941px) and (max-width:1279px)
+{
+    .main-content
+    {
+        height:90vh;
+    }
+}
